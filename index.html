@@ -17,25 +17,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container site-header-container">
-            <a href="index.html" class="logo">
-                <img class="logo-img" src="Images/icons/logo-img.svg" alt="CoffeeRoasters">
+    <div class="site-header-hero-wrapper">
+        <header class="site-header">
+            <div class="site-header-container container">
+            <a class="site-header-logo-link" href="index.html">
+                <img class="site-header-logo-img" src="Images/icons/logo-img.svg" alt="CoffeeRoasters logo" width="235" height="24">
             </a>
-            <nav class="site-nav">
-                <ul class="site-nav-list">
-                    <li class="list-item">
-                        <a href="index.html" class="list-item-link">home</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="about.html" class="list-item-link">about us</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="plans.html" class="list-item-link">create your plan</a>
-                    </li>
+
+        <!-- SITENAV -->
+            <nav class="sitenav">
+                <ul class="sitenav-list">
+                    <li class="sitenav-item"><a class="sitenav-link" href="#">Home</a></li>
+                    <li class="sitenav-item"><a class="sitenav-link" href="#">About</a></li>
+                    <li class="sitenav-item"><a class="sitenav-link" href="#">Create your plan</a></li>
                 </ul>
             </nav>
-        </div>
+      </div>
     </header>
+        <div class="hero">
+            <div class="hero-container container">
+                <div class="hero-info-wrapper">
+                    <h1 class="hero-heading">Good coffee <br> is made simply.</h1>
+                    <p class="hero-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+                    <a class="btn btn-green" href="#">Create your plan</a>
+                </div>
+
+                <div class="hero-img-wrapper">
+                    <img class="hero-badge" src="Images/hero-badge.png" alt="" width="160" height="160" srcset="Images/hero-badge.png 1x, Images/hero-badge@2x.png 2x">
+                    <img class="hero-img hero-img-index" src="Images/index-hero-img.jpg" alt="Person's hand with iced coffee and cake on the table" width="710" height="696" srcset="Images/index-hero-img.jpg 1x, Images/index-hero-img@2x.jpg 2x">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
