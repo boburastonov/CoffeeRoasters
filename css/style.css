@@ -136,6 +136,7 @@ img{
 .site-header-logo-img {
     width: 235px;
     height: 24px;
+    flex-shrink: 0;
     object-fit: contain;
 }
 
@@ -166,6 +167,7 @@ img{
 .sitenav-medium-font .sitenav-link {
     font-size: 16px;
     line-height: normal;
+    letter-spacing: 1px;
 }
 
 .sitenav-link:hover {
@@ -450,6 +452,67 @@ img{
 }
 
 
+/* Site-Footer */
+.site-footer {
+    padding: 65px 50px;
+    background-image: url(../Images/site-header-intro-bg.jpg);
+}
+
+.site-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer-logo-link {
+    display: flex;
+}
+
+.site-footer-logo-link:hover {
+    opacity: 0.8;
+}
+
+.site-footer-logo-link:active {
+    opacity: 0.6;
+}
+
+.site-footer-logo-img {
+    width: 235px;
+    height: 24px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.sitenav-list {
+
+}
+
+
+.socials-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.socials-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.socials-link {
+    color: #333;
+}
+
+.sitenav-link:hover{
+    color: var(--accent-color-green);
+}
+
+.sitenav-link:active{
+    opacity: 0.6;
+}
+
+
 /* Retina-Bg */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -457,15 +520,19 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
-    body{
+    .site-header-hero-wrapper,
+    .site-footer{
         background-image: url(../Images/site-header-intro-bg@2x.jpg);
     }
+
     .index-collection-inner{
         background-image: url(../Images/index-collection-bg@2x.jpg);
     }
+
     .index-features-inner{
         background-image: url(../Images/index-features-bg@2x.jpg);
     }
+    
     .how-it-works-inner{
         background-image: url(../Images/green-bg@2x.jpg);
     }
